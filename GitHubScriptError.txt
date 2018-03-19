@@ -1,0 +1,44 @@
+python tttt.py -u brp23 -e patil.basu23@gmail.com
+username is " brp23
+email id is " patil.basu23@gmail.com
+Traceback (most recent call last):
+  File "tttt.py", line 42, in <module>
+    main(sys.argv[1:])
+  File "tttt.py", line 25, in main
+    check_user(user_login)
+  File "tttt.py", line 28, in check_user
+    q = g.get_user(login=username)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/github/MainClass.py", line 168, in get_user
+    "/users/" + login
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/github/Requester.py", line 169, in requestJsonAndCheck
+    return self.__check(*self.requestJson(verb, url, parameters, headers, input, cnx))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/github/Requester.py", line 215, in requestJson
+    return self.__requestEncode(cnx, verb, url, parameters, headers, input, encode)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/github/Requester.py", line 268, in __requestEncode
+    status, responseHeaders, output = self.__requestRaw(cnx, verb, url, requestHeaders, encoded_input)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/github/Requester.py", line 293, in __requestRaw
+    requestHeaders
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1042, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1082, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1263, in connect
+    server_hostname=server_hostname)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 363, in wrap_socket
+    _context=self)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 611, in __init__
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 840, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:661)
+MBP512-BPATIL-0318:Documents basavarajpatil$ python --version
+Python 2.7.14
+MBP512-BPATIL-0318:Documents basavarajpatil$ 
+
+
